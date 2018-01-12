@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Tells the browser what the title of this page should be. -->
+    <title>Xiaoyan's Resume</title>
+    <meta name="description" content="resume experiece education">
+    <meta name="keywords" content="HTML,CSS, AJAX">
+    <meta name="author" content="Xiaoyan Liao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="style/main.css">
+  </head>
+  <body>
+    <div id="projects" class="mt-4">
+      <div data-bind="foreach: projectList">
+        <div class="ml-5 pl-3 pr-5 pb-3 row" data-bind="css: $index">
+          <div class="col-2 float-right">
+            <img data-bind="attr: {src: image}" class="img-thumbnail size100" alt="project">
+          </div>
+          <div class="col-10 float-left">
+            <h4>
+              <a class="link text-left" data-bind="text: title, attr: {href: link}"></a>
+            </h4>
+            <div class="date-text clearfix">
+              <div class="float-left" data-bind="text: timeline"></div>
+            </div>
+            <div>
+              <ul data-bind="foreach: bulletin">
+                <li class="text-left" data-bind="text: $data"></li>
+              </ul>
+            </div>
+          </div> 
+        </div>
+      </div>
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <script src="js/info_data.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>
