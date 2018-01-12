@@ -1,132 +1,93 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcom to Xiaoyan Liao's Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-    <style>
-      .notification {
-        padding: 1.25rem;
-      }
-      .title {
-        font-size: 1.3rem;
-      }
-    </style>
-  </head>
-  <body>
-  <section class="section">
-    <div class="tile is-ancestor">
-      <div class="tile is-parent">
-        <article class="tile is-child box notification is-primary">
-          <p class="subtitle">Who am I?</p>
-          <div class="content">
-            <p>Hi! I'm Xiaoyan Liao. I have master's degree in computer science. I'm U.S. permanent resident. I'm looking for a opportunity of software engineer in Bay Area</p>
-            <p><a href="mailto:running923@gmail.com" target="_top">Hi Xiaoyan, I have a job position for you!</a></p>            
-          </div>
-        </article>
+<head>
+  <meta charset="utf-8">
+  <title>Xiaoyan's Resume</title>
+  <meta name="description" content="resume">
+  <meta name="keywords" content="HTML,CSS, AJAX">
+  <meta name="author" content="Xiaoyan Liao">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <link href="style/header.css" rel="stylesheet">
+</head>
+<body>
+  <div id="basicInfo" class="contrainer-fluid header">
+    <header class="row mb-0">
+      <div class="col-md-10 mb-0">
+          <h1 class="yellow text-left">
+            <span data-bind="text: name"></span>
+            <span class="xs-header mb-0" data-bind="text: title"></span>
+          </h1>
       </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box notification is-success">
-          <p class="subtitle">Bank Sub-Branch Management System</p>
-          <div class="content">
-            <p>Provide a central portal for management to supervise the operations of bank sub-branches. This system has been deployed in more than 1100 sub-branches and served more than 15,000 employee in Sichuan Province of China.</p>
-            <p>-Java, Spring, Hibernate, Struts, Sql, Shell, Sybase, Websphere</p>
-          </div>
-        </article>
+      <div class="col-md-1 bottom-0">
+        <a class="btn btn-block btn-social btn-primary btn-linkedin btn-xs" 
+          data-bind="attr: {href: linkedin}">
+          <span class="fa fa-linkedin"></span>
+        </a>
       </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box notification is-success">
-          <p class="subtitle">Project Management System for IT Department</p>
-          <div class="content">
-            <p>It aims to develop a centralized internal IT project management system for Agricultural Bank of China Sichuan branch. It provides basic project progress managements and report generation. </p>
-            <p>-C#, ASP.NET, Sql, Sybase, Javascript, Html, Css, Jquery</p>
-          </div>
-        </article>
+      <div class="col-md-1">
+        <a class="btn btn-block btn-social btn-primary btn-github btn-xs" 
+          data-bind="attr: {href: github}">
+          <span class="fa fa-github"></span>
+        </a>
       </div>
-    </div>
-    
-    <div class="tile is-ancestor">
-      <div class="tile is-vertical is-8">
-        <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child box notification is-success">
-              <p class="subtitle"><a href="https://github.com/Xiaoyan-L/tab-tracker">Tab Tracker</a></p>
-              <div class="content">
-                <p>FreeCodeCamp project. </p>
-                <p>-NodeJs, VueJs, Javascript, Html, Css, SequelizeJs, Mysql</p>
-              </div>
-            </article>
-            <article class="tile is-child box notification is-success">
-              <p class="subtitle">Trader's NoteBook</p>
-              <div class="content">
-                  <p>
-                    A startup Web Application. 
-                  </p>
-                  <p>-NodeJs, VueJs, Javascript, Html, Css, SequelizeJs, Mysql</p>
-                </div>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child box notification is-info">
-              <p class="title">Xiaoyan Liao's Page</p>
-              <p class="subtitle">Santa Clara, CA</p>
-              <figure class="image is-4by3">
-                <img src="https://www.dropbox.com/s/98v7p2v0cric0jd/IMG_20131123_103602.jpg?raw=1">
-              </figure>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child box notification is-primary">
-            <p class="title">Graduate Student Research Assistant</p>
-            <p class="subtitle">Ultrasound Medical Image Lab(Jun '06 – May '09)</p>
-            <div class="content">
-              <p>Design the algorithm of Border Detection of Echocardiac Left Ventricle Imaging for heart disease diagnosis in ultrasound images. 
-                <a herf="https://link.springer.com/chapter/10.1007%2F978-3-540-79039-6_135">This work was published in the 7th Asian-Pacific Conference on Medical and Biological Engineering 2008.</a>
-              </p>
-              <p>Design the algorithm of Color map for Ultrasound Medical System to colorize the bloodstream in ultrasound images, which can help to diagnosis the hardening of the artery.</p>
-            </div>
-          </article>
-        </div>
+    </header>
+      
+    <hr class="hr">
+    <div class="contact row">
+      <div class="col-md-3">
+        <label class="yellow">email: </label>
+        <span data-bind="text: email"></span>
       </div>
-      <div class="tile is-parent">
-        <article class="tile is-child box notification is-primary">
-          <div class="navbar-menu">
-              <span class="navbar-item">
-                <a class="button is-primary is-inverted" href="https://github.com/Xiaoyan-L">
-                  <span class="icon">
-                    <i class="fa fa-github"></i>
-                  </span>
-                  <span>Github</span>
-                </a>
-              </span>
-              <span class="navbar-item">
-                <a class="button is-primary is-inverted" href="https://www.linkedin.com/in/xiaoyanliao/">
-                    <span class="icon">
-                      <i class="fa fa-linkedin"></i>
-                    </span>
-                    <span>Linkedin</span>
-                  </a>
-              </span>
-          </div>
-          <div class="content">
-            <p class="title">Web Developer</p>
-            <p class="subtitle">A stealth Mode Startup(Feb '17 - Present)</p>
-            <div class="content">
-              <p>Full stack web development and database design</p>
-            </div>
-            <p class="title">Software Engineer/System Administrator</p>
-            <p class="subtitle">Agricultural Bank of China(Jul '09 - Jul '14)</p>
-            <div class="content">
-              <p>Develop several management systems for bank business departments based on .NET and J2EE/Spring, including server deployment, database design and create, data process, development, and database backup, and maintenance after launch. These systems have been deployed in more than 1100 sub-branch organizations and are serving for more than 15 thousand employees.</p>
-              <p>Administrate the office systems of Agricultural Bank of China Sichuan Branch, including mail and official documents system, operating management website, loan and credit systems, etc. Maintain these systems, including bug fix, user account management, data processing and backup, etc. Provide all kinds of reports to business departments.</p>
-            </div>
-          </div>
-        </article>
+      <div class="col-md-3">
+        <label class="yellow">location: </label>
+        <span data-bind="text: location"></span>
       </div>
     </div>
-  </section>
-  </body>
+    <div class="row">
+      <div class="col-md-2 text-right">
+        <img data-bind="attr: {src: photo, alt: 'me'}">
+      </div>
+      <div class="col-md-9 font-13">
+        <span data-bind="text: statement">
+        </span>
+        <p></p>
+        <p class="yellow bottom-p">
+          Skills at a Glance:
+        </p>
+        <ul data-bind="foreach: skill">
+          <li class="mb-1" data-bind="text: $data">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <nav class="navbar navbar-light bg-faded pt-2 pb-0">
+          <form class="form-inline mb-0">
+            <a class="btn btn-sm btn-outline-primary mr-md-5" 
+              data-bind="click: showFrame.bind($data, 'home')">
+              Home
+            </a>
+            <a class="btn btn-sm btn-outline-primary mr-md-5"
+              data-bind="click: showFrame.bind($data, 'projects')">
+              Work Projects
+            </a>
+            <a class="btn btn-sm btn-outline-primary mr-md-5"
+              data-bind="click: showFrame.bind($data, 'projects')">
+              Course Projects
+            </a>
+          </form>
+        </nav>
+    </div>
+  </div> 
+  
+  <iframe id="iframe" src="home.html" scrolling="no"></iframe>
+
+  <script src="js/lib/knockout-3.4.2.js"></script>
+  <script src="js/info_data.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
 </html>
