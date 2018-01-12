@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Tells the browser what the title of this page should be. -->
+    <title>Xiaoyan's Resume</title>
+    <meta name="description" content="resume experiece education">
+    <meta name="keywords" content="HTML,CSS, AJAX">
+    <meta name="author" content="Xiaoyan Liao">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="style/main.css">
+  </head>
+  <body>
+    <div>
+      <div id="workExperience" class="gray">
+        <h2 class="text-left pb-0 pl-5">Work Experience</h2>
+        <div data-bind="foreach: experiences">
+          <div class="pl-3 pr-5">
+            <h4 class="link text-left ml-3 pl-4" data-bind="text: title">
+            </h4>
+            <div class="ml-3 pl-5 date-text clearfix">
+              <div class="float-left" data-bind="text: timeline"></div>
+              <div class="float-right" data-bind="text: location"></div>
+            </div>
+            <div class="ml-3 pl-5">
+              <ul data-bind="foreach: bulletin">
+                <li class="text-left" data-bind="text: $data"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/lib/knockout-3.4.2.js"></script>
+    <script src="js/info_data.js"></script>
+    <script src="js/home.js"></script>
+  </body>
+</html>
